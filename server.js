@@ -13,12 +13,12 @@ var port = process.env.PORT || 3000;
 // mongoose.connect(db.url);
 
 app.use(morgan('dev')); // logging to console for development use
-app.use(bodyParser()); // pull information from html in POST
+app.use(bodyParser.json());
 app.use(methodOverride()); // simulate DELETE and PUT
 app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
 
 // configure routes
-require('./server/routes')(app); 
+require('./server/router')(app); 
 
 // start app
 app.listen(port);
