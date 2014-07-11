@@ -9,7 +9,7 @@ mainModule.config(function($routeProvider, $locationProvider){
       controller: 'MainCtrl'
     })
     .when('/sample', {
-      templateUrl: 'pages/sample.html',
+      templateUrl: 'pages/mainApp-templates/sample.html',
       controller: 'MainCtrl'
     })
     .otherwise({
