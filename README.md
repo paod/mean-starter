@@ -13,7 +13,7 @@ Run `node server.js`
 ## Project Structure
 
     ├── config/
-    │   ├── db                      - Configure MongoDB URL
+    │   ├── db                            - Configure MongoDB URL
     |
     ├── public/                           - AngularJS client code
     │   ├── mainApp/                      - The main module that links in all other modules
