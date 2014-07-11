@@ -1,9 +1,20 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <title>MEAN Stack</title>
-</head>
-<body>
-  Paod's MEAN Stack seed!
-</body>
+  <head>
+    <title>MEAN Stack</title>
+    <link rel="stylesheet" href="mainApp/styles/main.css">
+  </head>
+  <body ng-app="mainApp">
+    Paod's MEAN Stack seed!
+
+    <div ng-view=""></div>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <script src="mainApp/main-app.js"></script>
+    <script src="mainApp/main-controller.js"></script>
+
+  </body>
 </html>
